@@ -41,11 +41,15 @@ JWT_SECRET=your-secret-key
 5. Set up the database: Run PostgreSQL and make sure to create the required database for the application. You can then sync the Sequelize models by running the project.
 
 #Commands to Start the Project
+
 1.Run the server:
  cd api
  npm start
+ 
 2.To check requests, use tools like Postman or Insomnia.
- Usage
+
+ Usage:
+ 
 Registration: Use /api/register to create a new user.
 Login: Use /api/login to authenticate and receive a token.
 Add Post: After logging in, you can create posts by sending a request to /api/posts.
