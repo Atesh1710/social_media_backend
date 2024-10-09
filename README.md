@@ -24,21 +24,33 @@ Ensure you have Node.js installed (v14+ recommended) and PostgreSQL running.
 #Dependencies include:
 
 pg for PostgreSQL interaction
+
 crypto for password hashing
+
 jsonwebtoken (JWT) for user authentication
+
 moment for time formatting
+
 bcryptjs for password encryption
+
 express for handling routes
+
 sequelize for ORM (Object Relational Mapping)
 
 4. Set up environment variables in a .env file (create it in the root of the api folder):
+   
 DB_HOST=your-db-host
+
 DB_USER=your-db-username
+
 DB_PASSWORD=your-db-password
+
 DB_DATABASE=your-db-name
+
 JWT_SECRET=your-secret-key
 
-5. Set up the database: Run PostgreSQL and make sure to create the required database for the application. You can then sync the Sequelize models by running the project.
+
+6. Set up the database: Run PostgreSQL and make sure to create the required database for the application. You can then sync the Sequelize models by running the project.
 
 #Commands to Start the Project
 
@@ -51,9 +63,14 @@ JWT_SECRET=your-secret-key
  Usage:
  
 Registration: Use /api/register to create a new user.
+
 Login: Use /api/login to authenticate and receive a token.
+
 Add Post: After logging in, you can create posts by sending a request to /api/posts.
+
 Follow Users: Use /api/follow/:id to follow other users.
+
 Comment and Like: Use /api/posts/:id/comment or /api/posts/:id/like.
+
 Note: Make sure to include the accessToken (JWT token) in your request headers for authenticated routes.
  
